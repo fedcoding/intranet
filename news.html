@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link href="css/animate.min.css" rel="stylesheet" />
+        <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Sarabun&display=swap"
+            rel="stylesheet"
+        />
+        <title>Noticias AND</title>
+    </head>
+    <body>
+        <header>
+            <div class="headerContainer">
+                <div class="headerBackground">
+                    <div class="headerLogo"></div>
+                    <h1>intranet</h1>
+                    <div class="intranetImage"></div>
+                </div>
+            </div>
+        </header>
+        <nav
+            class="navbar navbar-expand-lg navbar-light bg-transparent menuNavbar"
+        >
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active searhBarCenter-y">
+                        <form class="searchBarContainer">
+                            <button class="searchButton" type="submit">
+                              <img
+                                src="./assets/search.png"
+                                alt="icono de busqueda"
+                                class="iconSearch"
+                              />
+                            </button>
+              
+                            <input
+                              aria-label="Search"
+                              type="text"
+                              placeholder="Buscar"
+                              class=" border border-primary rounded-pill inputSearch"
+                            />
+                          </form>
+                    </li>
+                    <span class="menuDivider"></span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <span class="menuDivider"></span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./news.html">Noticias</a>
+                    </li>
+                    <span class="menuDivider"></span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Normatividad</a>
+                    </li>
+                    <span class="menuDivider"></span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MIPG</a>
+                    </li>
+                    <span class="menuDivider"></span>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle" 
+                            href="#" 
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            Directorio
+                        </a>
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="navbarDropdown"
+                        >
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <span class="menuDivider"></span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./gallery.html">Galería</a>
+                    </li>
+                    <span class="menuDivider"></span>
+                </ul>
+            </div>
+            <div class="userContainer">
+                <div class="userIconContainer">
+                    <img src="./assets/user.png" alt="" class="iconUser" />
+                </div>
+                <div class="userNameContainer">
+                    <span>Bienvenid@</span>
+                </div>
+            </div>
+        </nav>
+        <section class="dependenciesMenu">
+            <div class="dependenciesLine">
+              <div class="iconContainer">
+                <a href="">
+                  <div class="iconsBorder" id="direccionBorder">
+                    <img
+                      src="./assets/direccion.jpg"
+                      alt="icono de una mujer sonriendo"
+                      class="depenciesIcons"
+                    />
+                  </div>
+                </a>
+                <span class="iconText">Dirección</span>
+              </div>
+              <div class="iconContainer">
+                <a href="">
+                  <div class="iconsBorder" id="ciudadanosBorder">
+                    <img
+                      src="./assets/ciudadanos.jpg"
+                      alt="icono de personas estrechando la mano"
+                      class="depenciesIcons"
+                    />
+                  </div>
+                </a>
+                <span class="iconText"
+                  >Subdirección <br />Servicios Ciudadanos Digitales</span
+                >
+              </div>
+              <div class="iconContainer">
+                <a href="">
+                  <div class="iconsBorder" id="desarrolloBorder">
+                    <img
+                      src="./assets/desarrollo.jpg"
+                      alt="icono de piezas de rompecabezas que encajan correctamente"
+                      class="depenciesIcons"
+                    />
+                  </div>
+                </a>
+                <span class="iconText"
+                  >Subdirección <br />
+                  Desarrollo</span
+                >
+              </div>
+              <div class="iconContainer">
+                <a href="">
+                  <div class="iconsBorder" id="administrativaBorder">
+                    <img
+                      src="./assets/administrativa.jpg"
+                      alt="icono de articulos de oficina"
+                      class="depenciesIcons"
+                    />
+                  </div>
+                </a>
+                <span class="iconText">Subdirección Administrativa y Financiera</span>
+              </div>
+              <div class="iconContainer">
+                <a href="">
+                  <div class="iconsBorder" id="juridicaBorder">
+                    <img
+                      src="./assets/juridica.jpg"
+                      alt="icono de un contrato"
+                      class="depenciesIcons"
+                    />
+                  </div>
+                </a>
+                <span class="iconText"
+                  >Subdirección<br />
+                  Juridica</span
+                >
+              </div>
+            </div>
+        </section>
+        <h3 class="newsTitleSideBar">Todas las Noticias</h3>
+        <div class="row">
+            <div class="col-12 col-lg-4 newSideBar">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a
+                        class="list-group-item list-group-item-action active"
+                        id="list-home-list"
+                        title="Noticia - Agencia Nacional Digital"
+                        data-toggle="list"
+                        href="#list-home"
+                        role="tab"                     
+                        aria-controls="home"
+                        ><div class="media">
+                            <img
+                                src="./assets/noti1.jpg"
+                                class="align-self-center mr-3"
+                                alt="Fotografía - Agencia Nacional Digital"
+                                height="64"
+                                height="64"
+                            />
+                            <div class="media-body">
+                                <span class="mt-0">December 2019</span><br />
+                                <h5 class="mt-0">
+                                    UN GRAN RETO NACIONAL CON LA LEY DE COMERCIO
+                                    ELECTRÓNICO
+                                </h5>
+                                <p>
+                                    El día 29 de noviembre del 2019 la Agencia
+                                    Nacional Digital estuvo presente en el Foro
+                                    Ley 527 de 1999...
+                                </p>
+                            </div>
+                        </div></a
+                    >
+                    <a
+                        class="list-group-item list-group-item-action"
+                        id="list-profile-list"
+                        title="Noticia - Agencia Nacional Digital"
+                        data-toggle="list"
+                        href="#list-profile"
+                        role="tab"
+                        aria-controls="profile"
+                        ><div class="media">
+                            <img
+                                src="./assets/noti2.jpg"
+                                class="align-self-center mr-3"
+                                alt="Fotografía - Agencia Nacional Digital"
+                                alt="..."
+                                height="64"
+                                height="64"
+                            />
+                            <div class="media-body">
+                                <span class="mt-0">December 2019</span><br />
+                                <h5 class="mt-0">
+                                    JORNADA DE PLANEACIÓN ESTRATÉGICA 2020-2022
+                                </h5>
+                                <p>
+                                    El día 6 de noviembre la Agencia Nacional
+                                    Digital realizó su jornado de planeación
+                                    estratégica bajo el liderato de las...
+                                </p>
+                            </div>
+                        </div></a
+                    >
+                    <a
+                        class="list-group-item list-group-item-action"
+                        id="list-messages-list"
+                        title="Noticia - Agencia Nacional Digital"
+                        data-toggle="list"
+                        href="#list-messages"
+                        role="tab"
+                        aria-controls="messages"
+                        ><div class="media">
+                            <img
+                                src="./assets/noti3.jpg"
+                                class="align-self-center mr-3"
+                                alt="Fotografía - Agencia Nacional Digital"
+                                alt="..."
+                                height="64"
+                                height="64"
+                            />
+                            <div class="media-body">
+                                <span class="mt-0">December 2019</span><br />
+                                <h5 class="mt-0">
+                                    ELECCIÓN DE REPRESENTANTE PARA LOS COMITÉS
+                                    INTERNOS
+                                </h5>
+                                <p>
+                                    La Agencia Nacional Digital llevó a cabo las
+                                    votaciones internas para seleccionar al
+                                    representante del comité de convivencia
+                                    laboral y...
+                                </p>
+                            </div>
+                        </div></a
+                    >
+                    <a
+                        class="list-group-item list-group-item-action"
+                        id="list-settings-list"
+                        title="Noticia - Agencia Nacional Digital"
+                        data-toggle="list"
+                        href="#list-settings"
+                        role="tab"
+                        aria-controls="settings"
+                        ><div class="media">
+                            <img
+                                src="./assets/noti4.png"
+                                class="align-self-center mr-3"
+                                alt="Fotografía - Agencia Nacional Digital"
+                                alt="..."
+                                height="64"
+                                height="64"
+                            />
+                            <div class="media-body">
+                                <span class="mt-0">December 2019</span><br />
+                                <h5 class="mt-0">
+                                    LA AND PARTICIPÓ EN EL SIMULACRO DISTRITAL
+                                    DE EVACUACIÓN
+                                </h5>
+                                <p>
+                                    En cualquier momento, sin importar el lugar
+                                    o la hora es posible que sin previo aviso
+                                    suceda algún tipo de...
+                                </p>
+                            </div>
+                        </div></a
+                    >
+                    <a
+                        class="list-group-item list-group-item-action"
+                        id="list-bilingual-list"
+                        title="Noticia - Agencia Nacional Digital"
+                        data-toggle="list"
+                        href="#list-bilingual"
+                        role="tab"
+                        aria-controls="settings"
+                        ><div class="media">
+                            <img
+                                src="./assets/noti5.png"
+                                class="align-self-center mr-3"
+                                alt="Fotografía - Agencia Nacional Digital"
+                                alt="..."
+                                height="64"
+                                height="64"
+                            />
+                            <div class="media-body">
+                                <span class="mt-0">December 2019</span><br />
+                                <h5 class="mt-0">
+                                    PROGRAMA DE BILINGÜISMO DEL DAFP – SENA
+                                </h5>
+                                <p>
+                                    La Agencia Nacional Digital se suma a la
+                                    iniciativa de tiene el Departamento
+                                    Administrativo de la Función Pública (DAFP)
+                                    y...
+                                </p>
+                            </div>
+                        </div></a
+                    >
+                </div>
+            </div>
+            <div class="col-12 col-lg-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div
+                        class="tab-pane fade show active"
+                        id="list-home"
+                        role="tabpanel"
+                        aria-labelledby="list-home-list"
+                    >
+                        <h2 class="newsTitle">
+                            UN GRAN RETO NACIONAL CON LA LEY DE COMERCIO
+                            ELECTRÓNICO
+                        </h2>
+                        <span class="newsDate">December 13, 2019</span>
+                        <p class="newsParagraph">
+                            El día 29 de noviembre del 2019 la Agencia Nacional
+                            Digital estuvo presente en el Foro Ley 527 de 1999
+                            organizado por la Universidad Externado de Colombia
+                            y la Universidad de los Andes, un foro buscaba
+                            analizar los avances de la ley de comercio
+                            electrónico, así como el impacto de la misma en el
+                            país y así debatir sobre los diversos procesos
+                            estatales que permitan optimizar la administración
+                            pública.<br /><br />
+                            <span
+                                >Ahora bien, para implementar las nuevas
+                                tecnologías en los procesos del Estado se ha
+                                adelantado un “cambio de chip” en gestión
+                                pública que aborda una perspectiva más
+                                futurista, que facilitará el entendimiento de la
+                                nueva visión del mundo digital, ya que los
+                                bienes intangibles tendrán mucho más valor y
+                                validez que los tangibles, por lo tanto, se
+                                tendrá en cuenta la importancia de generar
+                                nuevos estándares de calidad al momento de
+                                generar proyectos de ciencia, tecnología e
+                                innovación aplicada.</span
+                            >
+                        </p>
+                        <img
+                            src="./assets/noti1.jpg"
+                            title="Fotografía - Agencia Nacional Digital"
+                            alt="Fotografía - Agencia Nacional Digital"
+                            class="newsImage"
+                        />
+                        <p class="newsParagraph">
+                            El taller de planeación estratégica dió inicio en
+                            las horas de la mañana, con dinámicas que
+                            permitieron en primera instancia dar una revisión a
+                            la plataforma estratégica (misión, visión,
+                            objetivos) para lograr un acercamiento a la
+                            organización conceptual que busca la Agencia
+                            Nacional Digital. Posteriormente se llevó a cabo una
+                            revisión de la articulación con el Plan Nacional de
+                            Desarrollo y el Plan Estratégico Sectorial TIC, en
+                            el que la Agencia cumple un rol de gran importancia
+                            al ser el encargado de apoyar la transformación
+                            digital del país.<br /><br /><span
+                                >Igualmente se realizó un reconocimiento del
+                                modelo de negocio que actualmente está manejando
+                                la Agencia Nacional Digital, para ello se hizo
+                                uso del modelo canvas y de ahí se consiguió una
+                                visualización más focalizada de los puntos clave
+                                a tratar. De modo tal que los líderes
+                                esclarecieron cuales son las estrategias que
+                                tiene que llevar a cabo la entidad para lograr
+                                una correcta gestión y alcanzar los objetivos
+                                propuestos.<br /></span
+                            ><span
+                                >La Agencia Nacional Digital continuará
+                                trabajando por lograr la implementación del
+                                Modelo de Servicios Ciudadanos Digitales,
+                                aportando a la mejora en el funcionamiento de
+                                los trámites digitales de las entidades
+                                públicas, contribuyendo a la transformación
+                                digital del Estado. Seguirá emprendiendo
+                                proyectos de ciencia, tecnología e innovación
+                                aplicada para dar solución a las diferentes
+                                necesidades de transformación digital que tengan
+                                las entidades públicas en Colombia.</span
+                            >
+                        </p>
+                        <img
+                            src="./assets/noti6.jpg"
+                            title="Fotografía - Agencia Nacional Digital"
+                            alt="Fotografía - Agencia Nacional Digital"
+                            class="newsImage"
+                        />
+                    </div>
+                    <div
+                        class="tab-pane fade"
+                        id="list-profile"
+                        role="tabpanel"
+                        aria-labelledby="list-profile-list"
+                    >
+                        <h2 class="newsTitle">
+                            JORNADA DE PLANEACIÓN ESTRATÉGICA 2020-2022
+                        </h2>
+                        <span class="newsDate">December 13, 2019</span>
+                        <p class="newsParagraph">
+                            El día 6 de noviembre la Agencia Nacional Digital
+                            realizó su jornado de planeación estratégica bajo el
+                            liderato de las profesionales de planeación Jenny
+                            Cruz y Johanna Laverde, encargadas de dirigir los
+                            diferentes ejercicios que se llevaron a cabo a lo
+                            largo de toda la jornada. Para el desarrollo de las
+                            actividades estuvieron presentes los líderes de cada
+                            área de trabajo. Mayerly Díaz Rojas Directora, Luis
+                            Alberto Clavijo Cuineme Asesor de Dirección, Claudia
+                            Bibiana Durán Huergo Subdirectora de Administrativa
+                            y Financiera, Julie Ximena Rueda Montes Subdirectora
+                            de Jurídica, Lina María Cruz Silva Subdirectora de
+                            Servicios Ciudadanos Digitales, Diana Milena Barbosa
+                            Rojas Subdirectora de Desarrollo, además cada
+                            representante estuvo acompañado de sus líderes de
+                            equipo de trabajo.<br /><br />
+                            <span
+                                >El taller de planeación estratégica dió inicio
+                                en las horas de la mañana, con dinámicas que
+                                permitieron en primera instancia dar una
+                                revisión a la plataforma estratégica (misión,
+                                visión, objetivos) para lograr un acercamiento a
+                                la organización conceptual que busca la Agencia
+                                Nacional Digital. Posteriormente se llevó a cabo
+                                una revisión de la articulación con el Plan
+                                Nacional de Desarrollo y el Plan Estratégico
+                                Sectorial TIC, en el que la Agencia cumple un
+                                rol de gran importancia al ser el encargado de
+                                apoyar la transformación digital del país.</span
+                            >
+                        </p>
+                        <img
+                            src="./assets/noti2.jpg"
+                            title="Fotografía - Agencia Nacional Digital"
+                            alt="Fotografía - Agencia Nacional Digital"
+                            class="newsImage"
+                        />
+                        <p class="newsParagraph">
+                            Igualmente se realizó un reconocimiento del modelo
+                            de negocio que actualmente está manejando la Agencia
+                            Nacional Digital, para ello se hizo uso del modelo
+                            canvas y de ahí se consiguió una visualización más
+                            focalizada de los puntos clave a tratar. De modo tal
+                            que los líderes esclarecieron cuales son las
+                            estrategias que tiene que llevar a cabo la entidad
+                            para lograr una correcta gestión y alcanzar los
+                            objetivos propuestos.<br /><br /><span
+                                >La Agencia Nacional Digital continuará
+                                trabajando por lograr la implementación del
+                                Modelo de Servicios Ciudadanos Digitales,
+                                aportando a la mejora en el funcionamiento de
+                                los trámites digitales de las entidades
+                                públicas, contribuyendo a la transformación
+                                digital del Estado. Seguirá emprendiendo
+                                proyectos de ciencia, tecnología e innovación
+                                aplicada para dar solución a las diferentes
+                                necesidades de transformación digital que tengan
+                                las entidades públicas en Colombia..<br /><br /></span
+                            ><span
+                                >La Agencia Nacional Digital continuará
+                                trabajando por lograr la implementación del
+                                Modelo de Servicios Ciudadanos Digitales,
+                                aportando a la mejora en el funcionamiento de
+                                los trámites digitales de las entidades
+                                públicas, contribuyendo a la transformación
+                                digital del Estado. Seguirá emprendiendo
+                                proyectos de ciencia, tecnología e innovación
+                                aplicada para dar solución a las diferentes
+                                necesidades de transformación digital que tengan
+                                las entidades públicas en Colombia.</span
+                            >
+                        </p>
+                        <img
+                            src="./assets/noti7.jpg"
+                            title="Fotografía - Agencia Nacional Digital"
+                            alt="Fotografía - Agencia Nacional Digital"
+                            class="newsImage"
+                        />
+                    </div>
+                    <div
+                        class="tab-pane fade"
+                        id="list-messages"
+                        role="tabpanel"
+                        aria-labelledby="list-messages-list"
+                    >
+                        <h2 class="newsTitle">
+                            ELECCIÓN DE REPRESENTANTE PARA LOS COMITÉS INTERNOS
+                        </h2>
+                        <span class="newsDate">December 13, 2019</span>
+                        <p class="newsParagraph">
+                            La Agencia Nacional Digital llevó a cabo las
+                            votaciones internas para seleccionar al
+                            representante del comité de convivencia laboral y el
+                            COPASST, el día 15 de noviembre del 2019 en el     
+                            edificio Murillo Toro, los candidatos tuvieron la
+                            posibilidad de ser elegidos por los trabajadores, a
+                            través de una votación secreta, que se realizó con
+                            expresión libre, espontánea y auténtica de todos los
+                            trabajadores mediante escrutinio público. La persona
+                            seleccionada para los comités, se encargará de
+                            promover un excelente ambiente de convivencia
+                            laboral y espacios saludables de trabajo, fomentar
+                            relaciones sociales positivas entre todos los
+                            trabajadores y respaldar la dignidad e integridad de
+                            los trabajadores de la AND.<br />
+                        </p>
+                        <img
+                            src="./assets/noti3.jpg"
+                            title="Fotografía - Agencia Nacional Digital"
+                            alt="Fotografía - Agencia Nacional Digital"
+                            class="newsImage"
+                        />
+                        <p class="newsParagraph">
+                            La Agencia Nacional Digital llevó a cabo las
+                            votaciones internas para seleccionar al
+                            representante del comité de convivencia laboral y el
+                            COPASST, el día 15 de noviembre del 2019 en el
+                            edificio Murillo Toro, los candidatos tuvieron la
+                            posibilidad de ser elegidos por los trabajadores, a
+                            través de una votación secreta, que se realizó con
+                            expresión libre, espontánea y auténtica de todos los
+                            trabajadores mediante escrutinio público. La persona
+                            seleccionada para los comités, se encargará de
+                            promover un excelente ambiente de convivencia
+                            laboral y espacios saludables de trabajo, fomentar
+                            relaciones sociales positivas entre todos los
+                            trabajadores y respaldar la dignidad e integridad de
+                            los trabajadores de la AND.<br /><br /><span
+                                >Igualmente se realizó un reconocimiento del
+                                modelo de negocio que actualmente está manejando
+                                la Agencia Nacional Digital, para ello se hizo
+                                uso del modelo canvas y de ahí se consiguió una
+                                visualización más focalizada de los puntos clave
+                                a tratar. De modo tal que los líderes
+                                esclarecieron cuales son las estrategias que
+                                tiene que llevar a cabo la entidad para lograr
+                                una correcta gestión y alcanzar los objetivos
+                                propuestos.<br>
+                        </p>
+                        <img
+                            src="./assets/noti8.jpg"
+                            title="Fotografía - Agencia Nacional Digital"
+                            alt="Fotografía - Agencia Nacional Digital"
+                            class="newsImage"
+                        />
+                    </div>
+                    <div
+                    class="tab-pane fade"
+                    id="list-settings"
+                    role="tabpanel"
+                    aria-labelledby="list-settings-list"
+                >
+                    <h2 class="newsTitle">
+                        LA AND PARTICIPÓ EN EL SIMULACRO DISTRITAL DE EVACUACIÓN
+                    </h2>
+                    <span class="newsDate">December 13, 2019</span>
+                    <p class="newsParagraph">
+                        En cualquier momento, sin importar el lugar o la hora es posible que sin previo aviso suceda algún tipo de 
+                        emergencia o siniestro en Colombia. Ante dicha posibilidad el instituto nacional de gestión de riesgos y 
+                        cambio climático promueve parámetros que permiten dar posibles soluciones para actuar ante eventos 
+                        inesperados y salvaguardar vidas.<br />
+                    </p>
+                    <img
+                        src="./assets/noti4.png"
+                        title="Fotografía - Agencia Nacional Digital"
+                        alt="Fotografía - Agencia Nacional Digital"
+                        class="newsImage"
+                    />
+                    <p class="newsParagraph">
+                        Asumiendo la responsabilidad como ente público la AND se preparó con antelación al informarse sobre todos los requisitos 
+                        y pautas que se han de tener en cuenta ante cualquier situación que pueda vulnerar la vida de las personas. Por ello en 
+                        la entidad se conformó una brigada la cual tuvo como labor informarse y capacitarse como un primer respondiente.
+                        Asimismo se prepararon y se establecieron acuerdos para evacuar en caso de emergencia, se identificaron
+                        formas de protección y finalmente cuando ya se coordinaron las rutas de evacuación y puntos de 
+                        encuentro seguros ante una emergencia, la AND se inscribió al octavo simulacro distrital de evacuación.
+                    </p>
+                    <img
+                        src="./assets/noti11.jpg"
+                        title="Fotografía - Agencia Nacional Digital"
+                        alt="Fotografía - Agencia Nacional Digital"
+                        class="newsImage"
+                    />
+                </div>
+                    <div
+                        class="tab-pane fade"
+                        id="list-bilingual"
+                        role="tabpanel"
+                        aria-labelledby="list-bilingual-list"
+                    >
+                        <h2 class="newsTitle">
+                            PROGRAMA DE BILINGÜISMO DEL DAFP – SENA
+                        </h2>
+                        <span class="newsDate">December 13, 2019</span>
+                        <p class="newsParagraph">
+                            La Agencia Nacional Digital se suma a la iniciativa de tiene el Departamento Administrativo de 
+                            la Función Pública (DAFP) y el Servicio Nacional de Aprendizaje (SENA), quienes firmaron un convenio 
+                            interadministrativo para crear un  programa que tiene como objetivo capacitar en inglés o francés a 
+                            servidores públicos y contratistas, para así ampliar sus capacidades y competencias laborales, 
+                            posibilitando el desarrollo profesional y personal, facilitando la gestión de relaciones y oportunidades internacionales.<br />
+                        </p>
+                        <img
+                            src="./assets/noti5.png"
+                            title="Fotografía - Agencia Nacional Digital"
+                            alt="Fotografía - Agencia Nacional Digital"
+                            class="newsImage"
+                        />
+                        <p class="newsParagraph">
+                            Tenemos un compromiso con la sociedad y por ello buscamos fortalecer las habilidades de 
+                            nuestro talento humano, motivarlos a crear transformaciones en sus propias vidas, y así
+                            generar una gran eficiencia y productividad, que ayude a nuestros procesos internos y a 
+                            desarrollar nuevas oportunidades de interacción con nuestros grupos de valor. 
+
+                            Por ello la AND tuvo un encuentro con el personal encargado de llevar el acompañamiento
+                            a las personas que se inscribieron al programa de bilingüismo, explicando el funcionamiento 
+                            de la metodología de estudio y las diversas actividades que se deben desarrollar para lograr 
+                            un excelente aprendizaje. Por lo cual la AND se comprometió con sus colaboradores a generar
+                            espacio y a brindar el tiempo que necesiten para el desarrollo de las actividades.
+                        </p>
+                        <img
+                            src="./assets/noti12.png"
+                            title="Fotografía - Agencia Nacional Digital"
+                            alt="Fotografía - Agencia Nacional Digital"
+                            class="newsImage"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="marginFooter"></section>
+        <footer>
+            POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES © Copyright 2018 Agencia
+            Nacional Digital. <span>Todos los derechos reservados.</span>
+        </footer>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"
+        ></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Bootstrap Dropdown Hover JS -->
+        <script src="js/bootstrap-dropdownhover.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sarabun&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LIGHTBOX FADING SHOW/HIDE EFFECT (as explained in documentation) -->
+    <style type="text/css">
+      .lcl_fade_oc.lcl_pre_show #lcl_overlay,
+      .lcl_fade_oc.lcl_pre_show #lcl_window,
+      .lcl_fade_oc.lcl_is_closing #lcl_overlay,
+      .lcl_fade_oc.lcl_is_closing #lcl_window {
+        opacity: 0 !important;
+      }
+      .lcl_fade_oc.lcl_is_closing #lcl_overlay {
+        -webkit-transition-delay: 0.15s !important;
+        transition-delay: 0.15s !important;
+      }
+    </style>
+
+    <!-- //////////////////////////////////////////////// -->
+    <!-- REQUIRED ELEMENTS -->
+
+    <script src="lib/jquery.js" type="text/javascript"></script>
+
+    <script src="js/lc_lightbox.lite.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/lc_lightbox.css" />
+
+    <!-- SKINS -->
+    <link rel="stylesheet" href="skins/minimal.css" />
+
+    <!-- ASSETS -->
+    <script
+      src="lib/AlloyFinger/alloy_finger.min.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- //////////////////////////////////////////////// -->
+    <!-- //////////////////////////////////////////////// -->
+    <title>Galeria AND</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="headerContainer">
+        <div class="headerBackground">
+          <div class="headerLogo"></div>
+          <h1>intranet</h1>
+          <div class="intranetImage"></div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent menuNavbar">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item active searhBarCenter-y">
+            <form class="searchBarContainer">
+              <button class="searchButton" type="submit">
+                <img
+                  src="./assets/search.png"
+                  alt="icono de busqueda"
+                  class="iconSearch"
+                />
+              </button>
+
+              <input
+                aria-label="Search"
+                type="text"
+                placeholder="Buscar"
+                class=" border border-primary rounded-pill inputSearch"
+              />
+            </form>
+          </li>
+          <span class="menuDivider"></span>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Inicio</a>
+          </li>
+          <span class="menuDivider"></span>
+          <li class="nav-item">
+            <a class="nav-link" href="./news.html">Noticias</a>
+          </li>
+          <span class="menuDivider"></span>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Normatividad</a>
+          </li>
+          <span class="menuDivider"></span>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MIPG</a>
+          </li>
+          <span class="menuDivider"></span>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Directorio
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <span class="menuDivider"></span>
+          <li class="nav-item">
+            <a class="nav-link" href="./gallery.html">Galería</a>
+          </li>
+          <span class="menuDivider"></span>
+        </ul>
+      </div>
+      <div class="userContainer">
+        <div class="userIconContainer">
+          <img src="./assets/user.png" alt="" class="iconUser" />
+        </div>
+        <div class="userNameContainer">
+          <span>Bienvenid@</span>
+        </div>
+      </div>
+    </nav>
+
+    <section class="pageTitle">
+      <p><span>CONOCE</span><br />Nuestras Dependencias</p>
+    </section>
+    <section class="dependenciesMenu">
+      <div class="dependenciesLine">
+        <div class="iconContainer">
+          <a href="">
+            <div class="iconsBorder" id="direccionBorder">
+              <img
+                src="./assets/direccion.jpg"
+                alt="icono de una mujer sonriendo"
+                class="depenciesIcons"
+              />
+            </div>
+          </a>
+          <span class="iconText">Dirección</span>
+        </div>
+        <div class="iconContainer">
+          <a href="">
+            <div class="iconsBorder" id="ciudadanosBorder">
+              <img
+                src="./assets/ciudadanos.jpg"
+                alt="icono de personas estrechando la mano"
+                class="depenciesIcons"
+              />
+            </div>
+          </a>
+          <span class="iconText"
+            >Subdirección <br />Servicios Ciudadanos Digitales</span
+          >
+        </div>
+        <div class="iconContainer">
+          <a href="">
+            <div class="iconsBorder" id="desarrolloBorder">
+              <img
+                src="./assets/desarrollo.jpg"
+                alt="icono de piezas de rompecabezas que encajan correctamente"
+                class="depenciesIcons"
+              />
+            </div>
+          </a>
+          <span class="iconText"
+            >Subdirección <br />
+            Desarrollo</span
+          >
+        </div>
+        <div class="iconContainer">
+          <a href="">
+            <div class="iconsBorder" id="administrativaBorder">
+              <img
+                src="./assets/administrativa.jpg"
+                alt="icono de articulos de oficina"
+                class="depenciesIcons"
+              />
+            </div>
+          </a>
+          <span class="iconText">Subdirección Administrativa y Financiera</span>
+        </div>
+        <div class="iconContainer">
+          <a href="">
+            <div class="iconsBorder" id="juridicaBorder">
+              <img
+                src="./assets/juridica.jpg"
+                alt="icono de un contrato"
+                class="depenciesIcons"
+              />
+            </div>
+          </a>
+          <span class="iconText"
+            >Subdirección<br />
+            Juridica</span
+          >
+        </div>
+      </div>
+    </section>
+    <h2 class="galleryTitle">
+      Galería de Imagenes Agencia Nacional Digital
+    </h2>
+    <div class="container">
+      <div class="content">
+        <a
+          class="elem"
+          href="./assets/noti1.jpg"
+          title="Fotografía - Agencia Nacional Digital"
+          data-lcl-txt="lorem ipsum dolor sit amet"
+          data-lcl-author="someone"
+          data-lcl-thumb="./assets/noti1.jpg"
+          >Fotografía de la galería
+          <span style="background-image: url(./assets/noti1.jpg);"></span>
+        </a>
+        <a
+          class="elem"
+          href="./assets/noti2.jpg"
+          title="Fotografía - Agencia Nacional Digital"
+          data-lcl-txt="lorem ipsum dolor sit amet"
+          data-lcl-author="someone"
+          data-lcl-thumb="./assets/noti2.jpg"
+          >Fotografía de la galería
+          <span style="background-image: url(./assets/noti2.jpg);"></span>
+        </a>
+        <a
+          class="elem"
+          href="./assets/noti3.jpg"
+          title="Fotografía - Agencia Nacional Digital"
+          data-lcl-txt="lorem ipsum dolor sit amet"
+          data-lcl-author="someone"
+          data-lcl-thumb="./assets/noti3.jpg"
+          >Fotografía de la galería
+          <span style="background-image: url(./assets/noti3.jpg);"></span>
+        </a>
+
+        <a
+          class="elem"
+          href="./assets/noti4.png"
+          title="Fotografía - Agencia Nacional Digital"
+          data-lcl-txt="lorem ipsum dolor sit amet"
+          data-lcl-author="someone"
+          data-lcl-thumb="./assets/noti4.png"
+          >Fotografía de la galería
+          <span style="background-image: url(./assets/noti4.png);"></span>
+        </a>
+        <a
+          class="elem"
+          href="./assets/noti5.png"
+          title="Fotografía - Agencia Nacional Digital"
+          data-lcl-txt="lorem ipsum dolor sit amet"
+          data-lcl-author="someone"
+          data-lcl-thumb="./assets/noti5.png"
+          >Fotografía de la galería
+          <span style="background-image: url(./assets/noti5.png);"></span>
+        </a>
+        <a
+          class="elem"
+          href="./assets/noti6.jpg"
+          title="Fotografía - Agencia Nacional Digital"
+          data-lcl-txt="lorem ipsum dolor sit amet"
+          data-lcl-author="someone"
+          data-lcl-thumb="./assets/noti6.jpg"
+          >Fotografía de la galería
+          <span style="background-image: url(./assets/noti6.jpg);"></span>
+        </a>
+        <a
+          class="elem"
+          href="./assets/noti7.jpg"
+          title="Fotografía - Agencia Nacional Digital"
+          data-lcl-txt="lorem ipsum dolor sit amet"
+          data-lcl-author="someone"
+          data-lcl-thumb="./assets/noti7.jpg"
+          >Fotografía de la galería
+          <span style="background-image: url(./assets/noti7.jpg);"></span>
+        </a>
+        <a
+          class="elem"
+          href="./assets/noti8.jpg"
+          title="Fotografía - Agencia Nacional Digital"
+          data-lcl-txt="lorem ipsum dolor sit amet"
+          data-lcl-author="someone"
+          data-lcl-thumb="./assets/noti8.jpg"
+          >Fotografía de la galería
+          <span style="background-image: url(./assets/noti8.jpg);"></span>
+        </a>
+        <a
+          class="elem"
+          href="./assets/noti9.jpg"
+          title="Fotografía - Agencia Nacional Digital"
+          data-lcl-txt="lorem ipsum dolor sit amet"
+          data-lcl-author="someone"
+          data-lcl-thumb="./assets/noti9.jpg"
+          >Fotografía de la galería
+          <span style="background-image: url(./assets/noti9.jpg);"></span>
+        </a>
+
+        <a
+          class="elem"
+          href="./assets/noti11.jpg"
+          title="Fotografía - Agencia Nacional Digital"
+          data-lcl-txt="lorem ipsum dolor sit amet"
+          data-lcl-author="someone"
+          data-lcl-thumb="./assets/noti11.jpg"
+          >Fotografía de la galería
+          <span style="background-image: url(./assets/noti11.jpg);"></span>
+        </a>
+        <a
+          class="elem"
+          href="./assets/noti12.png"
+          title="Fotografía - Agencia Nacional Digital"
+          data-lcl-txt="lorem ipsum dolor sit amet"
+          data-lcl-author="someone"
+          data-lcl-thumb="./assets/noti12.png"
+          >Fotografía de la galería
+          <span style="background-image: url(./assets/noti12.png);"></span>
+        </a>
+        <a
+          class="elem"
+          href="./assets/noti10.jpg"
+          title="Fotografía - Agencia Nacional Digital"
+          data-lcl-txt="lorem ipsum dolor sit amet"
+          data-lcl-author="someone"
+          data-lcl-thumb="./assets/noti10.jpg"
+          >Fotografía de la galería
+          <span style="background-image: url(./assets/noti10.jpg);"></span>
+        </a>
+
+        <br /><br />
+      </div>
+    </div>
+    <footer>
+      POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES © Copyright 2018 Agencia
+      Nacional Digital. <span>Todos los derechos reservados.</span>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Dropdown Hover JS -->
+    <script src="./lightbox/ekko-lightbox.min.js"></script>
+    <script src="js/bootstrap-dropdownhover.min.js"></script>
+    <script src="./jquery/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(e) {
+        // live handler
+        lc_lightbox(".elem", {
+          wrap_class: "lcl_fade_oc",
+          gallery: true,
+          thumb_attr: "data-lcl-thumb",
+
+          skin: "minimal",
+          radius: 0,
+          padding: 0,
+          border_w: 0
+        });
+      });
+    </script>
+  </body>
+</html>
